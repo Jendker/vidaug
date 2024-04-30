@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >= 3.4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "vidaug"
+version = "0.1"
+authors = [{name = "Okan Kopuklu", email = "okankopuklu@gmail.com"}]
+license = {file = "LICENSE"}
+description = "Video Augmentation Library"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "numpy", "scipy", "pillow", "opencv-python-headless", "scikit-image"
+]
+
+[tool.ruff.lint]
+ignore = ["C901", "E501", "E741", "F402", "F823", "E731"]
+select = ["C", "E", "F", "I", "W"]
